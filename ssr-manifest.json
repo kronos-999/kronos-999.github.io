@@ -1643,18 +1643,18 @@
     "/assets/virtual_pwa-register.aff8bdaf.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.29847fed.js"
+    "/assets/404.d42f1920.js"
   ],
   "src/layouts/admin.vue": [
     "/assets/admin.f3f3ab9f.js"
   ],
   "src/layouts/empty.vue": [
-    "/assets/empty.617e99bc.js"
+    "/assets/empty.912f6057.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.ef948ace.js"
+    "/assets/_...all_.e13002c9.js"
   ],
   "src/pages/admin/dashboard.vue": [
-    "/assets/dashboard.7efe0ee0.js"
+    "/assets/dashboard.2e7a5542.js"
   ]
 }
