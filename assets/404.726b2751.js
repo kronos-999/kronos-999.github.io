@@ -1,1 +1,0 @@
-import{_ as e}from"./app.59ee7ed0.js";import{r,o as s,d as a,k as n}from"./vendor.dbb28a5c.js";const o={class:"w-full min-h-screen bg-blue-100 grid place-items-center"};var t=e({},[["render",function(e,t){const c=r("router-view");return s(),a("main",o,[n(c)])}]]);export{t as default};
