@@ -59,7 +59,7 @@
 		"unplugin-auto-import": "^0.7.2",
 		"unplugin-icons": "^0.14.3",
 		"unplugin-vue-components": "0.19.5",
-		"vite-plugin-pages": "^0.23.0",
+		"vite-plugin-pages": "^0.27.1",
 		"vite-plugin-pwa": "^0.12.3",
 		"vite-plugin-vue-layouts": "^0.6.0",
 		"vite-ssg": "^0.20.2",
