@@ -1642,21 +1642,21 @@
     "/assets/virtual_pwa-register.aff8bdaf.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.7f0498c6.js"
+    "/assets/404.9bfe36f7.js"
   ],
   "src/layouts/admin.vue": [
     "/assets/admin.b3f8c760.js"
   ],
   "src/layouts/empty.vue": [
-    "/assets/empty.211c3d96.js"
+    "/assets/empty.e61aaefa.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.b0c317c0.js"
+    "/assets/_...all_.679da61b.js"
   ],
   "src/components/admin/SlideOver.vue": [
-    "/assets/dashboard.e8577b44.js"
+    "/assets/dashboard.8c558983.js"
   ],
   "src/pages/admin/dashboard.vue": [
-    "/assets/dashboard.e8577b44.js"
+    "/assets/dashboard.8c558983.js"
   ]
 }
