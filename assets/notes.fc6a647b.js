@@ -1,0 +1,1 @@
+import{s,b as t}from"./app.dcbb4bc7.js";import{h as a,o,b as n,F as e,p,l as b,d,t as l}from"./vendor.dbdcaef8.js";const u={type:"button"},f={__name:"notes",setup:t=>(a(""),(t,a)=>(o(),n("div",null,[(o(!0),n(e,null,p(b(s).notes,(s=>(o(),n("div",null,[d("button",u,l(s.text),1)])))),256))])))};"function"==typeof t&&t(f);export{f as default};
