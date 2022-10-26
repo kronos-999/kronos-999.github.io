@@ -4,10 +4,9 @@
   "locales/id.json": [],
   "src/modules/i18n.ts": [],
   "src/modules/pinia.ts": [],
-  "vite/preload-helper": [],
-  "src/modules/pwa.ts": [],
   "plugin-vue:export-helper": [],
   "src/App.vue": [],
+  "vite/preload-helper": [],
   "~icons/akar-icons/github-fill": [],
   "~icons/bx/bxs-moon": [],
   "~icons/bx/bx-moon": [],
@@ -1635,31 +1634,25 @@
   "node_modules/.pnpm/@headlessui+vue@1.6.7_vue@3.2.37/node_modules/@headlessui/vue/dist/headlessui.esm.js": [
     "/assets/vendor.cf8ea832.js"
   ],
-  "node_modules/.pnpm/workbox-window@6.5.4/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
-    "/assets/virtual_pwa-register.aff8bdaf.js"
-  ],
-  "../../../../../../../../@vite-plugin-pwa/virtual:pwa-register": [
-    "/assets/virtual_pwa-register.aff8bdaf.js"
-  ],
   "src/layouts/404.vue": [
-    "/assets/404.054e764d.js"
+    "/assets/404.7e224072.js"
   ],
   "src/layouts/admin.vue": [
     "/assets/admin.ac07fa80.js"
   ],
   "src/layouts/empty.vue": [
-    "/assets/empty.32045f97.js"
+    "/assets/empty.93087503.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.3e58041d.js"
+    "/assets/_...all_.5857c1be.js"
   ],
   "src/components/admin/SlideOver.vue": [
-    "/assets/dashboard.30084ebb.js"
+    "/assets/dashboard.89b1b22a.js"
   ],
   "src/pages/admin/dashboard.vue": [
-    "/assets/dashboard.30084ebb.js"
+    "/assets/dashboard.89b1b22a.js"
   ],
   "src/pages/admin/notes.vue": [
-    "/assets/notes.07197433.js"
+    "/assets/notes.782953fe.js"
   ]
 }
