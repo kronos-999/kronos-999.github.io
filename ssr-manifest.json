@@ -1631,24 +1631,24 @@
     "/assets/vendor.dbdcaef8.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.4e98e211.js"
+    "/assets/404.1ef3e974.js"
   ],
   "src/layouts/admin.vue": [
     "/assets/admin.7bb005b5.js"
   ],
   "src/layouts/empty.vue": [
-    "/assets/empty.535adbb1.js"
+    "/assets/empty.30376a71.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.f45f6f1e.js"
+    "/assets/_...all_.042e680a.js"
   ],
   "src/components/admin/SlideOver.vue": [
-    "/assets/dashboard.1251e63d.js"
+    "/assets/dashboard.b535c38e.js"
   ],
   "src/pages/admin/dashboard.vue": [
-    "/assets/dashboard.1251e63d.js"
+    "/assets/dashboard.b535c38e.js"
   ],
   "src/pages/admin/notes.vue": [
-    "/assets/notes.edd78b91.js"
+    "/assets/notes.9ccb4568.js"
   ]
 }
