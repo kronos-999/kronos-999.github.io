@@ -1,0 +1,1 @@
+import{s as a,a as s}from"./app.4fbe32a4.js";import{q as e,o as r,a as t,h as o,r as n}from"./vendor.fd70730a.js";const c={class:"w-full min-h-screen bg-blue-100 grid place-items-center"},i={__name:"404",setup:i=>(e((async()=>{await a(s.active_locale)})),(a,s)=>{const e=n("router-view");return r(),t("main",c,[o(e)])})};export{i as default};
