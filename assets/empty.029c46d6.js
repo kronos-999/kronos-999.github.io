@@ -1,0 +1,1 @@
+import{s as a,a as s}from"./app.94e2254e.js";import{q as e,o as t,a as o,h as r,r as c}from"./vendor.4f58abcb.js";const n={class:"contents"},p={__name:"empty",setup:p=>(e((async()=>{await a(s.active_locale)})),(a,s)=>{const e=c("router-view");return t(),o("div",n,[r(e)])})};export{p as default};

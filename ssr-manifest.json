@@ -1613,31 +1613,31 @@
     "/assets/vendor.4f58abcb.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.90a5dca4.js"
+    "/assets/404.29ad9ff4.js"
   ],
   "src/layouts/admin.vue": [
-    "/assets/admin.1e771da4.js"
+    "/assets/admin.dffa33de.js"
   ],
   "src/layouts/empty.vue": [
-    "/assets/empty.afc323fb.js"
+    "/assets/empty.029c46d6.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.962e8f76.js"
+    "/assets/_...all_.fdc4a67e.js"
   ],
   "src/components/auth/SignInForm.vue": [
-    "/assets/login.288c04da.js"
+    "/assets/login.2e1857bd.js"
   ],
   "src/pages/login.vue": [
-    "/assets/login.288c04da.js"
+    "/assets/login.2e1857bd.js"
   ],
   "src/components/admin/SlideOver.vue": [
-    "/assets/dashboard.f42383a7.js"
+    "/assets/dashboard.527434f9.js"
   ],
   "src/pages/admin/dashboard.vue": [
-    "/assets/dashboard.f42383a7.js"
+    "/assets/dashboard.527434f9.js"
   ],
   "src/pages/admin/notes.vue": [
-    "/assets/notes.a1bb6cf6.js"
+    "/assets/notes.6befd85e.js"
   ],
   "public/locales/de.json": [
     "/assets/de.031aa155.js"
