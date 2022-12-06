@@ -52,6 +52,7 @@
 </template>
 
 <script setup>
+import { t } from '~/i18n'
 import { Combobox, ComboboxInput, ComboboxButton, ComboboxOptions, ComboboxOption, TransitionRoot } from '@headlessui/vue'
 import { CheckIcon, SelectorIcon } from '@heroicons/vue/solid'
 
@@ -71,12 +72,12 @@ watch(selected, (v) => emit('change', v))
 
 let search_results = computed(() =>
   query.value === ''
-    ? props.options.slice(0, props.show_3_suggestions === true ? 3 : 15)
+    ? props.options.slice(0, props.show_3_suggestions === true ? 3 : 17)
     : props.options.filter((option) =>
         option.name
           .toLowerCase()
           .replace(/\s+/g, '')
           .includes(query.value.toLowerCase().replace(/\s+/g, ''))
-      ).slice(0, props.show_3_suggestions === true ? 3 : 15)
+      ).slice(0, props.show_3_suggestions === true ? 3 : 17)
 )
 </script>

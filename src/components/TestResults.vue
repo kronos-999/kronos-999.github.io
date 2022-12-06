@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="bg-white shadow overflow-hidden sm:rounded-md">
+  <div class="bg-white dark:bg-gray-900 overflow-hidden">
     <ul class="divide-y divide-gray-200" v-if="orgs_to_show.length">
       <li v-for="(org, i) in orgs_to_show" :key="org.address">
         <a :href="org.href" class="block hover:bg-gray-50" v-if="org.match.value > 0">
@@ -38,19 +38,21 @@
       </li>
     </ul>
     <div class="flex w-full justify-center" v-else>
-      <h3 class="font-semibold text-2xl">No matches yet</h3>
+      <h3 class="font-semibold text-2xl dark:text-white">No matches yet</h3>
     </div>
   </div>
 </template>
 
 <script setup>
+import { t } from '~/i18n'
 import { CheckCircleIcon, ChevronRightIcon } from '@heroicons/vue/solid'
 import { LocationMarkerIcon } from '@heroicons/vue/outline'
-import { useStore } from '@/store/index'
 
-const store = useStore()
 
-const user_inputs = store.user_inputs
+import { state } from '@/store/index';
+
+
+const user_inputs = state.user_inputs
 
 const calc_work_quality = (inputs) => {
   const { no_of_services, no_of_nurses, kita_close, education_budget, no_of_beds } = inputs
@@ -108,7 +110,7 @@ const calc_match = (org) => {
     org.inputs.work_quality    * (user_inputs.work_quality    / 5 )
   ) * 100).toFixed(2)
 
-  // if (!org.specializations_available.includes(store.location_inputs.specialization) || !org.positions_available.includes(store.location_inputs.position)) match = 0
+  // if (!org.specializations_available.includes(state.location_inputs.specialization) || !org.positions_available.includes(state.location_inputs.position)) match = 0
   // set value of org
   org.match.value = parseFloat(match)
 }
@@ -306,7 +308,7 @@ let orgs = ref([
   },
 ])
 
-const activator = computed(() => store.activator)
+const activator = computed(() => state.activator)
 const orgs_to_show = ref([])
 watch(activator, (b) => {
   console.log('go')

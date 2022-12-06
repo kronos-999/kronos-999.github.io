@@ -21,7 +21,7 @@
 	onMounted(async () => {
 		await nextTick();
 
-		body.value = document.querySelector('body') as HTMLBodyElement;
+		body.value = document.querySelector('html') as HTMLBodyElement;
 		if (body.value) {
 			if (isDark.value) body.value.classList.add('dark');
 		}

@@ -8,13 +8,13 @@
             <thead class="bg-gray-50">
               <tr>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Name
+                  {{ t('_26') }}
                 </th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Email
+                  {{ t('_27') }}
                 </th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Phone
+                  {{ t('_28') }}
                 </th>
                 <th scope="col" class="relative px-6 py-3">
                   <span class="sr-only">View</span>
@@ -22,7 +22,7 @@
               </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-              <tr v-for="(search, i) in store.past_searches" :key="i">
+              <tr v-for="(search, i) in state.past_searches" :key="i">
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   {{ search.form_inputs.first_name }}
                 </td>
@@ -46,12 +46,14 @@
 </template>
 
 <script setup>
-import { useStore } from '@/store/index'
-const store = useStore()
+import { t } from '~/i18n'
+
+import { state } from '@/store/index'
+
 
 const show_search = (s) => {
-  store.slide_over.search_data = s
-  store.slide_over.open = true
+  state.slide_over.search_data = s
+  state.slide_over.open = true
 }
 </script>
 

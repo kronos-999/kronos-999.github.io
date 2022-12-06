@@ -15,10 +15,12 @@
 	</div>
 </template>
 <script setup>
+import { t } from '~/i18n'
 import { defineComponent } from "vue"
-import { useStore } from '@/store/index'
 
-const store = useStore()
+
+import { state } from '@/store/index';
+
 const props = defineProps({
   max: { type: Number, required: false, default: 5 },
   modelValue: { type: Number, required: false, default: 0 },
@@ -34,7 +36,7 @@ const props = defineProps({
 
 const emit = defineEmits(['input']);
 
-const stars_given = computed(() => Object.values(store.user_inputs).reduce((a,b)=>a+b), 0)
+const stars_given = computed(() => Object.values(state.user_inputs).reduce((a,b)=>a+b), 0)
 
 const ratingChars = computed(() => [...props.char])
 const inactiveRatingChars = computed(() => !!props.inactiveChar ? [...props.inactiveChar] : props.ratingChars)

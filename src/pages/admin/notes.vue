@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="n in store.notes" >
+    <div v-for="n in state.notes" >
       <button type="button">
         {{ n.text }}
       </button>
@@ -10,8 +10,10 @@
 
 
 <script setup>
-import { useStore } from '@/store/index'
-const store = useStore() // xx
+import { t } from '~/i18n'
+
+import { state } from '@/store/index';
+ // xx
 
 const x = ref('')
 </script>

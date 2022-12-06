@@ -1,13 +1,11 @@
 
-
 <script setup>
+import { t } from '~/i18n'
 
-// I18N
-const { availableLocales, locale } = useI18n();
 // DARK MODE
 const preferedDark = usePreferredDark();
 const isDark = useStorage('isDark', preferedDark.value);
-const body = ref<HTMLBodyElement | null>(null);
+const body = ref(null)
 
 const toggleDarkMode = () => {
   if (body.value) {
@@ -23,7 +21,7 @@ const toggleDarkMode = () => {
 onMounted(async () => {
   await nextTick();
 
-  body.value = document.querySelector('body') as HTMLBodyElement;
+  body.value = document.querySelector('html')
   if (body.value) {
     if (isDark.value) body.value.classList.add('dark');
   }

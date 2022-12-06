@@ -1,25 +1,28 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="min-h-screen bg-white">
-    <Disclosure as="nav" class="bg-white border-b border-gray-200" v-slot="{ open }">
+  <div class="min-h-screen bg-white dark:bg-gray-900">
+    <Disclosure as="nav" class="bg-white dark:bg-gray-900 border-b border-gray-200" v-slot="{ open }">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex">
-            <div class="flex-shrink-0 flex items-center">
+            <!-- <div class="flex-shrink-0 flex items-center">
               <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-slate-600.svg" onerror="this.remove()" />
               <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-slate-600-mark-gray-800-text.svg" onerror="this.remove()" />
-            </div>
+            </div> -->
             <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'border-slate-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700', 'inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">
-                {{ item.name }}
+              <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'border-slate-500 text-gray-900 dark:text-gray-100' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700', 'inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">
+                {{ t(item.name) }}
               </a>
             </div>
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:items-center">
-            <button class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500">
+            <!-- <button class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500">
               <span class="sr-only">View notifications</span>
-              <!-- <BellIcon class="h-6 w-6" aria-hidden="true" /> -->
-            </button>
+              <BellIcon class="h-6 w-6" aria-hidden="true" />
+            </button> -->
+            
+            <DarkToggle />
+            <LangToggle />
 
             <!-- Profile dropdown -->
             <Menu as="div" class="ml-3 relative">
@@ -54,7 +57,7 @@
       <DisclosurePanel class="sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
           <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-slate-50 border-slate-500 text-slate-700' : 'border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800', 'block pl-3 pr-4 py-2 border-l-4 text-base font-medium']" :aria-current="item.current ? 'page' : undefined">
-            {{ item.name }}
+            {{ t(item.name) }}
           </a>
         </div>
         <div class="pt-4 pb-3 border-t border-gray-200">
@@ -83,8 +86,8 @@
     <div class="py-10">
       <header>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold leading-tight text-gray-900">
-            {{ navigation.find((x) => x.current === true)?.name }}
+          <h1 class="text-3xl font-bold leading-tight text-gray-900 dark:text-gray-100">
+            {{ t(navigation.find((x) => x.current === true)?.name) }}
           </h1>
         </div>
       </header>
@@ -103,8 +106,17 @@
 </template>
 
 <script setup>
+import { t } from '~/i18n'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
+import { state } from '~/store/index'
+
+/* load active locale if no data there */
+import { setLocale } from "~/i18n"
+
+onBeforeMount(async () => {
+  await setLocale(state.active_locale)
+})
 
 const route = useRoute()
 const open = ref(false)
@@ -115,14 +127,14 @@ const user = {
   imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Dashboard', href: '/admin/dashboard', current: route.path === '/admin/dashboard' },
-  { name: 'Notes',     href: '/admin/notes', current: route.path === '/admin/notes' },
+  { name: '_29', href: '/admin/dashboard', current: route.path === '/admin/dashboard' },
+  { name: '_30', href: '/admin/notes',     current: route.path === '/admin/notes' },
 /*   { name: 'Team', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
   { name: 'Calendar', href: '#', current: false }, */
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
+  /* { name: 'Your Profile', href: '#' }, */
 /*   { name: 'Settings', href: '#' },
   { name: 'Sign out', href: '#' }, */
 ]

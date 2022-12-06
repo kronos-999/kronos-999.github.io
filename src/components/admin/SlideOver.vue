@@ -1,6 +1,6 @@
 <template>
-  <TransitionRoot as="template" :show="store.slide_over.open == true && !!store.slide_over.search_data">
-    <Dialog as="div" static class="fixed inset-0 overflow-hidden" @close="store.slide_over.open = false" :open="store.slide_over.open == true">
+  <TransitionRoot as="template" :show="state.slide_over.open == true && !!state.slide_over.search_data">
+    <Dialog as="div" static class="fixed inset-0 overflow-hidden" @close="state.slide_over.open = false" :open="state.slide_over.open == true">
       <div class="absolute inset-0 overflow-hidden">
         <DialogOverlay class="absolute inset-0" />
 
@@ -14,7 +14,7 @@
                       Profile
                     </DialogTitle>
                     <div class="ml-3 h-7 flex items-center">
-                      <button class="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500" @click="store.slide_over.open = false">
+                      <button class="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500" @click="state.slide_over.open = false">
                         <span class="sr-only">Close panel</span>
                         <XIcon class="h-6 w-6" aria-hidden="true" />
                       </button>
@@ -36,15 +36,15 @@
                       <div class="mt-6 sm:ml-6 sm:flex-1">
                         <div>
                           <div class="flex items-center">
-                            <h3 class="font-bold text-xl text-gray-900 sm:text-2xl">{{ store.slide_over.search_data?.form_inputs.first_name }} {{ store.slide_over.search_data?.form_inputs.last_name }}</h3>
+                            <h3 class="font-bold text-xl text-gray-900 sm:text-2xl">{{ state.slide_over.search_data?.form_inputs.first_name }} {{ state.slide_over.search_data?.form_inputs.last_name }}</h3>
                           </div>
-                          <p class="text-sm text-gray-500">{{ store.slide_over.search_data?.form_inputs.email }} / +{{ store.slide_over.search_data?.form_inputs.phone }}</p>
+                          <p class="text-sm text-gray-500">{{ state.slide_over.search_data?.form_inputs.email }} / +{{ state.slide_over.search_data?.form_inputs.phone }}</p>
                         </div>
                         <div class="mt-5 flex flex-wrap space-y-3 sm:space-y-0 sm:space-x-3">
-                          <a :href="'mailto:' + store.slide_over.search_data.form_inputs.email" class="flex-shrink-0 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:flex-1">
+                          <a :href="'mailto:' + state.slide_over.search_data.form_inputs.email" class="flex-shrink-0 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:flex-1">
                             <MailIcon class="h-4 w-4" aria-hidden="true"/>
                           </a>
-                          <a :href="'tel:+' + store.slide_over.search_data.form_inputs.phone" class="flex-1 w-full inline-flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                          <a :href="'tel:+' + state.slide_over.search_data.form_inputs.phone" class="flex-1 w-full inline-flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                             <PhoneIcon class="h-4 w-4" aria-hidden="true"/>
                           </a>
                           <span class="ml-3 inline-flex sm:ml-0">
@@ -54,7 +54,7 @@
                                 <PencilAltIcon v-if="note.open === false" class="h-5 w-5" aria-hidden="true" />
                                 <XIcon v-else class="h-5 w-5" aria-hidden="true" />
                               </MenuButton>
-                              <MenuButton v-else @click="add_note({ id: store.slide_over.search_data.id })" class="inline-flex items-center p-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-400 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                              <MenuButton v-else @click="add_note({ id: state.slide_over.search_data.id })" class="inline-flex items-center p-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-400 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                 <span class="sr-only">Save Note</span>
                                 <SaveIcon class="h-5 w-5" aria-hidden="true" />
                               </MenuButton>
@@ -82,7 +82,7 @@
                         </dt>
                         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:ml-6 sm:col-span-2">
                           <p>
-                            {{ store.slide_over.search_data?.form_inputs.message }}
+                            {{ state.slide_over.search_data?.form_inputs.message }}
                           </p>
                         </dd>
                       </div>
@@ -91,7 +91,15 @@
                           Position
                         </dt>
                         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:ml-6 sm:col-span-2">
-                          {{ store.slide_over.search_data?.location_inputs.position.name }}
+                          {{ state.slide_over.search_data?.location_inputs.position.name }}
+                        </dd>
+                      </div>
+                      <div class="sm:flex sm:px-6 sm:py-5">
+                        <dt class="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-48">
+                          Specialization
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:ml-6 sm:col-span-2">
+                          {{ state.slide_over.search_data?.location_inputs.specialization.name }}
                         </dd>
                       </div>
                       <div class="sm:flex sm:px-6 sm:py-5">
@@ -100,7 +108,7 @@
                         </dt>
                         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:ml-6 sm:col-span-2">
                           <p>
-                            {{ store.slide_over.search_data?.location_inputs.city }} ({{ store.slide_over.search_data?.location_inputs.radius.name }})
+                            {{ state.slide_over.search_data?.location_inputs.city }} ({{ state.slide_over.search_data?.location_inputs.radius.name }})
                           </p>
                         </dd>
                       </div>
@@ -117,12 +125,14 @@
 </template>
 
 <script setup>
+import { t } from '~/i18n'
 import { Dialog, DialogOverlay, DialogTitle, Menu, MenuButton, MenuItem, MenuItems, TransitionChild, TransitionRoot } from '@headlessui/vue'
 import { XIcon, PencilAltIcon, SaveIcon } from '@heroicons/vue/outline'
 import { MailIcon, PhoneIcon } from '@heroicons/vue/solid'
 
-import { useStore } from '@/store/index'
-const store = useStore()
+
+import { state } from '@/store/index';
+
 
 const note = reactive({
   text: '',
@@ -131,7 +141,7 @@ const note = reactive({
 })
 
 const add_note = ({ id }) => {
-  store.notes.push(Object.assign({
+  state.notes.push(Object.assign({
     created_at: new Date(),
     id
   }, note))

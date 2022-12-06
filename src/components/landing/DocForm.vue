@@ -1,8 +1,8 @@
 <template>
-  <div id="doc_form" class="bg-gray-50">
+  <div id="doc_form" class="bg-gray-50 dark:bg-gray-900">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-      <div class="relative bg-white">
-        <h2 class="sr-only">Contact us</h2>
+      <div class="relative bg-white dark:bg-gray-900">
+        <h2 class="sr-only">{{ t('_19') }}</h2>
 
         <form class="grid grid-cols-1 lg:grid-cols-3" @submit.prevent="submit()">
           <!-- Contact information -->
@@ -40,15 +40,13 @@
                 </defs>
               </svg>
             </div>
-            <h3 class="text-xl font-medium text-white">Contact information</h3>
-            <p class="mt-6 text-base text-slate-50 max-w-3xl">Our team is always there to help you and will always answer within 1 business day</p>
+            <h3 class="text-xl font-medium text-white">{{ t('_20') }}</h3>
+            <p class="mt-6 text-base text-slate-50 max-w-3xl">{{ t('_21') }}</p>
             <dl class="mt-8 space-y-6">
-              <dt><span class="sr-only">Phone number</span></dt>
               <dd class="flex text-base text-slate-50">
                 <PhoneIcon class="flex-shrink-0 w-6 h-6 text-slate-200" aria-hidden="true" />
                 <span class="ml-3">+49 (0) 33112 313 12</span>
               </dd>
-              <dt><span class="sr-only">Email</span></dt>
               <dd class="flex text-base text-slate-50">
                 <MailIcon class="flex-shrink-0 w-6 h-6 text-slate-200" aria-hidden="true" />
                 <span class="ml-3">support@medching.com</span>
@@ -58,103 +56,115 @@
 
           <!-- Contact form -->
           <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-            <h3 class="text-2xl font-medium text-gray-900">Find your dream job</h3>
+            <h3 class="text-2xl font-medium text-gray-900 dark:text-gray-100">{{ t('_04') }}</h3>
             <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
               <div>
-                <label for="first-name" class="block text-sm font-medium text-gray-900">First name</label>
+                <label for="first-name" class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_05') }}</label>
                 <div class="mt-1">
-                  <input v-model="store.form_inputs.first_name" required type="text" name="first-name" id="first-name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" />
+                  <input v-model="state.form_inputs.first_name" required type="text" name="first-name" id="first-name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-gray-900 dark:text-gray-100 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" />
                 </div>
               </div>
               <div>
-                <label for="last-name" class="block text-sm font-medium text-gray-900">Last name</label>
+                <label for="last-name" class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_06') }}</label>
                 <div class="mt-1">
-                  <input v-model="store.form_inputs.last_name" required type="text" name="last-name" id="last-name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" />
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between">
-                  <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
-                </div>
-                <div class="mt-1">
-                  <input v-model="store.form_inputs.email" required id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" />
+                  <input v-model="state.form_inputs.last_name" required type="text" name="last-name" id="last-name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-gray-900 dark:text-gray-100 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" />
                 </div>
               </div>
               <div>
                 <div class="flex justify-between">
-                  <label for="phone" class="block text-sm font-medium text-gray-900">Phone</label>
+                  <label for="email" class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_07') }}</label>
                 </div>
                 <div class="mt-1">
-                  <input v-model="store.form_inputs.phone" required name="phone" id="phone" type="number" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" aria-describedby="phone-optional" />
+                  <input v-model="state.form_inputs.email" required id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-gray-900 dark:text-gray-100 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" />
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between">
+                  <label for="phone" class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_08') }}</label>
+                </div>
+                <div class="mt-1">
+                  <input v-model="state.form_inputs.phone" required name="phone" id="phone" type="number" class="py-3 px-4 block w-full shadow-sm text-gray-900 dark:text-gray-100 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" aria-describedby="phone-optional" />
                 </div>
               </div>
 
-              <div class="col-span-full" v-if="store.form_inputs.email && store.form_inputs.phone">
+              <div class="col-span-full" v-if="state.form_inputs.email && state.form_inputs.phone">
                 <div class="flex justify-between">
-                  <label for="password" class="block text-sm font-medium text-gray-900">Password</label>
+                  <label for="password" class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_09') }}</label>
                   <label for="password" class="block text-xs font-xs text-gray-800">Optional</label>
                 </div>
                 <div class="mt-1">
-                  <input v-model="password" name="password" id="password" type="password" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" aria-describedby="password" />
+                  <input v-model="password" name="password" id="password" type="password" class="py-3 px-4 block w-full shadow-sm text-gray-900 dark:text-gray-100 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" aria-describedby="password" />
+                </div>
+              </div>
+              <div class="col-span-full" v-if="state.form_inputs.email && state.form_inputs.phone && password.length">
+                <div class="flex justify-between">
+                  <label for="password_repeat" class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_10') }}</label>
+                  <label for="password_repeat" class="block text-xs font-xs text-gray-800">Optional</label>
+                </div>
+                <div class="mt-1">
+                  <input v-model="password_repeat" name="password_repeat" id="password_repeat" type="password" class="py-3 px-4 block w-full shadow-sm text-gray-900 dark:text-gray-100 focus:ring-slate-500 focus:border-slate-500 border-gray-300 rounded-md" aria-describedby="password" />
                 </div>
               </div>
 
 
               <div class="sm:col-span-2">
-                 <label class="block text-sm font-medium text-gray-900">City</label>
-                 <p v-if="store.location_inputs.city">
-                  {{ store.location_inputs.city }}
+                 <label class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_11') }}</label>
+                 <p v-if="state.location_inputs.city">
+                  {{ state.location_inputs.city }}
                  </p>
                 <Combobox v-show="tracktable['city'] == true" @change="({ name }) => set_location_input('city', name, 'position')" placeholder="Search City..." :options="cities"/>
               </div>
                 <div class="sm:col-span-2">
-                   <label class="block text-sm font-medium text-gray-900">Position</label>
-                   <p v-if="store.location_inputs.position">
-                    {{ store.location_inputs.position.name }}
+                   <label class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_12') }}</label>
+                   <p v-if="state.location_inputs.position">
+                    {{ state.location_inputs.position.name }}
                    </p>
                   <Combobox v-show="tracktable['position'] == true" @change="(v) => set_location_input('position', v, 'specialization')" placeholder="Search Position..." :options="positions"/>
                 </div>
               <div class="sm:col-span-2">
-                <label class="block text-sm font-medium text-gray-900">Specialization</label>
-                <p v-if="store.location_inputs.specialization">
-                  {{ store.location_inputs.specialization.name }}
+                <label class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_13') }}</label>
+                <p v-if="state.location_inputs.specialization">
+                  {{ state.location_inputs.specialization.name }}
                 </p>
-                <Combobox v-show="tracktable['specialization'] == true" @change="(v) => set_location_input('specialization', v, 'radius')" :show_3_suggestions="true" :multiple="true" placeholder="Search Specializations..." :options="specializations"/>
+                <Combobox v-show="tracktable['specialization'] == true" @change="(v) => set_location_input('specialization', v, 'radius')" :show_3_suggestions="false" :multiple="true" placeholder="Search Specializations..." :options="specializations"/>
               </div>
 
               <div class="sm:col-span-2">
-                <label class="block text-sm font-medium text-gray-900">Radius (km)</label>
-                <p v-if="store.location_inputs.radius">
-                  {{ store.location_inputs.radius.name }}
+                <label class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_14') }}</label>
+                <p v-if="state.location_inputs.radius">
+                  {{ state.location_inputs.radius.name }}
                 </p>
                 <Combobox v-show="tracktable['radius'] == true" @change="(v) => set_location_input('radius', v)" placeholder="Set Radius..." :options="radius_options"/>
               </div>
 
               
               <div class="sm:col-span-2 flex flex-col">
-                <label class="block text-sm font-medium text-gray-900">Stars left (please spend all 5 stars)</label>
+                <label class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_15') }}</label>
                 <Stars :readonly="true" name="xxx" :modelValue="max_stars - stars_given" :max="max_stars" />
-                <button type="button" class="flex justify-center w-20 bg-gray-600 text-white px-3 py-2 my-2 rounded" @click="reset">Reset</button>
+                <button type="button" class="flex justify-center w-20 bg-gray-600 text-white px-3 py-2 my-2 rounded" @click="reset">{{ t('_22') }}</button>
               </div>
               <div class="sm:col-span-2" v-for="p in preferences">
                 <span class="flex gap-4">
-                  <label class="text-sm font-medium text-gray-900">{{ p.name }}</label> <span class="text-sm font-small text-gray-900">({{ p.descr }})</span>
+                  <label class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ p.name }}</label> <span class="text-sm font-small text-gray-900 dark:text-gray-100">({{ p.descr }})</span>
                 </span>
-                <Stars :name="p.name" :max="max_stars" :readonly="stars_given === max_stars" @input="(v) => v + stars_given <= max_stars ? store.user_inputs[p.field] = v : store.user_inputs[p.field] = (max_stars - stars_given)" :modelValue="store.user_inputs[p.field]" />
+                <Stars :name="p.name" :max="max_stars" :readonly="stars_given === max_stars" @input="(v) => v + stars_given <= max_stars ? state.user_inputs[p.field] = v : state.user_inputs[p.field] = (max_stars - stars_given)" :modelValue="state.user_inputs[p.field]" />
               </div>
               <div class="sm:col-span-2">
                 <div class="flex justify-between">
-                  <label for="message" class="block text-sm font-medium text-gray-900">Message</label>
-                  <span id="message-max" class="text-sm text-gray-500">Max. 500 characters</span>
+                  <label for="message" class="block text-sm font-medium text-gray-900 dark:text-gray-100">{{ t('_16') }}</label>
+                  <div class="flex gap-x-3">
+                    <span id="message-max" class="text-sm text-gray-500">{{ t('_17') }}</span>
+                    <span id="message-max" class="text-sm text-gray-500">{{ t('_18') }}</span>
+                  </div>
                 </div>
                 <div class="mt-1">
-                  <textarea v-model="store.form_inputs.message" id="message" placeholder="Gehaltsvorstellung, 80/20 Stelle, ..." name="message" rows="4" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-slate-500 focus:border-slate-500 border border-gray-300 rounded-md" aria-describedby="message-max" />
+                  <textarea v-model="state.form_inputs.message" id="message" placeholder="Gehaltsvorstellung, 80/20 Stelle, ..." name="message" rows="4" class="py-3 px-4 block w-full shadow-sm text-gray-900 dark:text-gray-100 focus:ring-slate-500 focus:border-slate-500 border border-gray-300 rounded-md" aria-describedby="message-max" />
                 </div>
               </div>
               <div class="col-span-full flex">
 
-                <button type="submit" class="mr-4 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-slate-600 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 sm:w-auto">
-                  Submit
+                <button type="submit" :disabled="need_more_input == true" class="disabled:cursor-not-allowed disabled:bg-gray-700 mr-4 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-slate-600 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 sm:w-auto">
+                  {{ t('_23') }}
                 </button>
                 <Switch @change="(v) => agreed_to_terms = v" />
               </div>
@@ -167,18 +177,19 @@
 </template>
 
 <script setup>
+import { t } from '~/i18n'
 import { MailIcon, PhoneIcon } from '@heroicons/vue/outline'
-import { useStore } from '@/store/index'
+import { state } from '@/store/index';
 
-const store = useStore()
 
 const active_combobox = ref(undefined)
 const max_stars = ref(5)
-const stars_given = computed(() => Object.values(store.user_inputs).reduce((a,b)=>a+b), 0)
+const stars_given = computed(() => Object.values(state.user_inputs).reduce((a,b)=>a+b), 0)
 const agreed_to_terms = ref(false)
-const need_more_input = computed(() => /* store.location_inputs.specialization == 0 || store.location_inputs.position == 0 || */ agreed_to_terms.value == false || !store.form_inputs.first_name.length || !store.form_inputs.last_name.length || !store.form_inputs.email.length || !store.form_inputs.phone.length);
+const need_more_input = computed(() => agreed_to_terms.value == false || !state.form_inputs.first_name.length || !state.form_inputs.last_name.length || !state.form_inputs.email.length);
 
 const password = ref('')
+const password_repeat = ref('')
 
 const tracktable = reactive({
   'city': true,
@@ -188,13 +199,29 @@ const tracktable = reactive({
 })
 
 const set_location_input = (field, value, next) => {
-  store.location_inputs[field] = value // set data in store of field we just updated
+  state.location_inputs[field] = value // set data in store of field we just updated
   tracktable[field] = false // deactivate the field we just updated
   if (next) tracktable[next] = true // activated next field if available
 }
 
 const reset = () => {
-  store.user_inputs = {
+  
+  // deactivate all fields
+  Object.keys(tracktable).forEach(key => {
+    tracktable[key] = false
+  })
+
+  tracktable['city'] = true // only activate first one
+  // reset values
+  state.location_inputs = {
+		city: null,
+		state: null,
+		radius: null,
+		specialization: null,
+		position: null,
+	}
+
+  state.user_inputs = {
     work_life: 0,
     career: 0,
     work_quality: 0,
@@ -202,13 +229,13 @@ const reset = () => {
 }
 
 const submit = () => {
-  store.past_searches.push({
+  state.past_searches.push({
     'id': Math.floor(Math.random() * 5000),
-    'form_inputs': store.form_inputs,
-    'location_inputs': store.location_inputs,
-    'user_inputs': store.user_inputs,
+    'form_inputs': state.form_inputs,
+    'location_inputs': state.location_inputs,
+    'user_inputs': state.user_inputs,
   })
-  store.activator = !store.activator
+  state.activator = !state.activator
 }
 
 
@@ -222,7 +249,8 @@ const positions = [
   { id: 2, name: 'Assistenzarzt' },
   { id: 3, name: 'Facharzt' },
   { id: 4, name: 'Oberarzt' },
-  { id: 5, name: 'Ltd. Oberarzt' }]
+  { id: 5, name: 'Ltd. Oberarzt' },
+  { id: 6, name: 'Chefarzt' }]
 const preferences = [
   { field: 'work_life', name: "Work-Life Balance", descr: 'How well you balance work with life'},
   { field: 'career', name: "Karrieremöglichkeiten", descr: 'How fast you can climb the ladder'},
@@ -315,8 +343,8 @@ const specializations = [
   { id: 86, name: 'Orthopädie - Chirurgie ' },
   { id: 87, name: 'Senologie und Brustzentrum' },
   { id: 88, name: 'Palliativmedizin ' },
-  { id: 89, name: 'Pädieatrie - Endokrinologie ' },
-  { id: 90, name: 'Pädietrie - Gastroenterologie' },
+  { id: 89, name: 'Pädiatrie - Endokrinologie ' },
+  { id: 90, name: 'Pädiatrie - Gastroenterologie' },
   { id: 91, name: 'Pädiatrie - Hämatologie und internistische Onkologie ' },
   { id: 92, name: 'Pädiatrie - Kinderkardiologie' },
   { id: 93, name: 'Pädiatrie - Kinderneurologie ' },
@@ -355,7 +383,7 @@ const specializations = [
   { id: 126, name: 'Allergologie' }]
 
 const cities = [
-  { name: "Aachen" },
+  { id: 1, name: "Aachen" },
   { name: "Aalen" },
   { name: "Achern" },
   { name: "Achim" },
