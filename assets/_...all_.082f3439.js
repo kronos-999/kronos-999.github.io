@@ -1,1 +1,0 @@
-import{ae as t,o as a,a as e,b as o}from"./vendor.4f58abcb.js";import{c as s}from"./app.3293c5d7.js";const l={class:"text-blue-500 font-extrabold flex flex-col text-center"},c=[o("span",{class:"text-7xl"},"404.",-1)],f={__name:"[...all]",setup:o=>(t({title:"404. Not Found"}),(t,o)=>(a(),e("h1",l,c)))};"function"==typeof s&&s(f);export{f as default};
