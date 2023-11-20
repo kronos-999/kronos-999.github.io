@@ -1141,91 +1141,91 @@
     "/assets/vendor.78461187.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.abbf5c42.js"
+    "/assets/404.ce8d85f7.js"
   ],
   "src/layouts/admins.vue": [
-    "/assets/admins.ebf1d738.js"
+    "/assets/admins.cc0a8969.js"
   ],
   "src/lib/fireAPI.js": [
-    "/assets/fireAPI.4f4b760e.js"
+    "/assets/fireAPI.7aa1e5b8.js"
   ],
   "src/components/admin/DarkToggle.vue": [
     "/assets/DarkToggle.57cdeefd.js"
   ],
   "src/layouts/docs_profile.vue": [
-    "/assets/docs_profile.1b1a601f.js"
+    "/assets/docs_profile.560ff05b.js"
   ],
   "src/layouts/empty.vue": [
-    "/assets/empty.1b8ba63b.js"
+    "/assets/empty.0cf4bfdd.js"
   ],
   "src/layouts/hunters.vue": [
-    "/assets/hunters.ddea3758.js"
+    "/assets/hunters.bbe616be.js"
   ],
   "src/components/slideovers/ClinicsSettingsSlideOver.vue": [
-    "/assets/logged_in_clinics.bd8fe410.js"
+    "/assets/logged_in_clinics.9006ae69.js"
   ],
   "src/layouts/logged_in_clinics.vue": [
-    "/assets/logged_in_clinics.bd8fe410.js"
+    "/assets/logged_in_clinics.9006ae69.js"
   ],
   "../../../../../serpent.svg": [
     "/assets/serpent.f850a72b.js"
   ],
   "src/components/slideovers/DocsSettingsSlideOver.vue": [
-    "/assets/logged_in_docs.d515dec7.js"
+    "/assets/logged_in_docs.322f96dd.js"
   ],
   "src/layouts/logged_in_docs.vue": [
-    "/assets/logged_in_docs.d515dec7.js"
+    "/assets/logged_in_docs.322f96dd.js"
   ],
   "src/composables/addDeduped.ts": [
     "/assets/addDeduped.8c328dee.js"
   ],
   "src/components/LoadingSpinner.vue": [
-    "/assets/LoadingSpinner.61d07e37.js"
+    "/assets/LoadingSpinner.985faa17.js"
   ],
   "src/components/auth/RegisterFormClinics.vue": [
-    "/assets/auth.d710fcf4.js"
+    "/assets/auth.5208eb55.js"
   ],
   "src/components/auth/LoginFormClinics.vue": [
-    "/assets/auth.d710fcf4.js"
+    "/assets/auth.5208eb55.js"
   ],
   "src/components/form/IconInput.vue": [
-    "/assets/auth.d710fcf4.js"
+    "/assets/auth.5208eb55.js"
   ],
   "src/components/auth/RegisterFormDocs.vue": [
-    "/assets/auth.d710fcf4.js"
+    "/assets/auth.5208eb55.js"
   ],
   "src/components/auth/LoginFormDocs.vue": [
-    "/assets/auth.d710fcf4.js"
+    "/assets/auth.5208eb55.js"
   ],
   "src/pages/auth.vue": [
-    "/assets/auth.d710fcf4.js"
+    "/assets/auth.5208eb55.js"
   ],
   "src/components/landing/FAQ.vue": [
-    "/assets/faqs.67337abd.js"
+    "/assets/faqs.c05157c7.js"
   ],
   "src/pages/faqs.vue": [
-    "/assets/faqs.67337abd.js"
+    "/assets/faqs.c05157c7.js"
   ],
   "src/pages/admins/clinics.vue": [
-    "/assets/clinics.0bcfd111.js"
+    "/assets/clinics.af7881a8.js"
   ],
   "src/components/ClinicMasterTable.vue": [
-    "/assets/ClinicsSlideOver.cb1e488d.js"
+    "/assets/ClinicsSlideOver.9f02c829.js"
   ],
   "src/components/slideovers/ClinicsSlideOver.vue": [
-    "/assets/ClinicsSlideOver.cb1e488d.js"
+    "/assets/ClinicsSlideOver.9f02c829.js"
   ],
   "src/components/form/ButtonInput.vue": [
-    "/assets/ButtonInput.bfc20fff.js"
+    "/assets/ButtonInput.2d0dab8a.js"
   ],
   "src/pages/admins/docs.vue": [
-    "/assets/docs.b68b8dd0.js"
+    "/assets/docs.bee7a7f1.js"
   ],
   "src/components/slideovers/DocsSlideOver.vue": [
-    "/assets/DocsSlideOver.c0ea0f76.js"
+    "/assets/DocsSlideOver.fe0a282f.js"
   ],
   "src/components/ShortsFilters.vue": [
-    "/assets/ShortsFilters.489b434d.js"
+    "/assets/ShortsFilters.21a5ea53.js"
   ],
   "node_modules/.pnpm/@babel+runtime@7.22.5/node_modules/@babel/runtime/helpers/esm/typeof.js": [
     "/assets/TDatepicker.53bafdb1.js",
@@ -1768,87 +1768,84 @@
     "/assets/TDatepicker.1bb31671.css"
   ],
   "src/components/slideovers/HuntersSlideOver.vue": [
-    "/assets/hunters.80e2033d.js"
+    "/assets/hunters.cf1f37a2.js"
   ],
   "src/pages/admins/hunters.vue": [
-    "/assets/hunters.80e2033d.js"
+    "/assets/hunters.cf1f37a2.js"
   ],
   "src/pages/admins/jobs.vue": [
-    "/assets/jobs.439960a9.js"
+    "/assets/jobs.43c10d75.js"
   ],
   "src/components/slideovers/JobsSlideOver.vue": [
-    "/assets/JobsSlideOver.3a80c307.js"
+    "/assets/JobsSlideOver.234e471e.js"
   ],
   "src/pages/admins/login.vue": [
-    "/assets/login.3697fd8f.js"
+    "/assets/login.6a86d26c.js"
   ],
   "src/components/slideovers/SlideOver.vue": [
-    "/assets/searches.3a34dd35.js"
+    "/assets/searches.2d92f0c8.js"
   ],
   "src/pages/admins/searches.vue": [
-    "/assets/searches.3a34dd35.js"
+    "/assets/searches.2d92f0c8.js"
   ],
   "src/pages/admins/shorts.vue": [
-    "/assets/shorts.fcf3d111.js"
+    "/assets/shorts.d83c1ceb.js"
   ],
   "src/components/slideovers/ShortsSlideOver.vue": [
-    "/assets/ShortsSlideOver.ac9470a9.js"
+    "/assets/ShortsSlideOver.11694f74.js"
   ],
   "src/components/clinics/ClinicsSearchResults.vue": [
-    "/assets/docs.e745ff5e.js"
+    "/assets/docs.99097ccc.js"
   ],
   "src/components/clinics/ClinicsSearchFilters.vue": [
-    "/assets/docs.e745ff5e.js"
+    "/assets/docs.99097ccc.js"
   ],
   "src/pages/clinics/docs.vue": [
-    "/assets/docs.e745ff5e.js"
+    "/assets/docs.99097ccc.js"
   ],
   "src/components/Badge.vue": [
     "/assets/Badge.64e2efb0.js"
   ],
   "src/components/clinics/SuccessPopup.vue": [
-    "/assets/request.e5b6fd62.js"
+    "/assets/request.5a193641.js"
   ],
   "src/components/clinics/ClinicRequest.vue": [
-    "/assets/request.e5b6fd62.js"
+    "/assets/request.5a193641.js"
   ],
   "src/components/clinics/ClinicHeader.vue": [
-    "/assets/request.e5b6fd62.js"
+    "/assets/request.5a193641.js"
   ],
   "src/pages/clinics/request.vue": [
-    "/assets/request.e5b6fd62.js"
+    "/assets/request.5a193641.js"
   ],
   "src/components/clinics/ClinicsShortsResults.vue": [
-    "/assets/shorts.1ea7898f.js"
+    "/assets/shorts.305b2019.js"
   ],
   "src/pages/clinics/shorts.vue": [
-    "/assets/shorts.1ea7898f.js"
+    "/assets/shorts.305b2019.js"
   ],
   "src/components/docs/DocsSearchResults.vue": [
-    "/assets/clinics.d02c2fd4.js"
+    "/assets/clinics.7e830cb8.js"
   ],
   "src/pages/docs/clinics.vue": [
-    "/assets/clinics.d02c2fd4.js"
+    "/assets/clinics.7e830cb8.js"
   ],
   "src/pages/docs/shorts.vue": [
-    "/assets/shorts.bab33ff4.js"
+    "/assets/shorts.16dc8b99.js"
   ],
   "src/pages/hunters/clinics.vue": [
-    "/assets/clinics.f40483ad.js"
+    "/assets/clinics.405e71bc.js"
   ],
   "src/pages/hunters/docs.vue": [
-    "/assets/docs.22d41b5c.js"
+    "/assets/docs.0fa7306f.js"
   ],
   "src/pages/hunters/jobs.vue": [
-    "/assets/jobs.b7ca2b9e.js"
+    "/assets/jobs.ce9d585a.js"
   ],
   "src/pages/hunters/login.vue": [
-    "/assets/login.c0381ced.js"
+    "/assets/login.805cc482.js"
   ],
   "src/pages/hunters/shorts.vue": [
-    "/assets/shorts.21964c4c.js"
-  ],
-  "src/pages/docs/[id]/index.vue": [
-    "/assets/index.ee0486df.js"
+    "/assets/shorts.a2f73d63.js"
   ]
 }

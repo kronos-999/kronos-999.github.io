@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "file": "assets/app.eacb9c81.js",
+    "file": "assets/app.0499de2a.js",
     "src": "index.html",
     "isEntry": true,
     "imports": [
@@ -32,18 +32,17 @@
       "src/pages/hunters/docs.vue",
       "src/pages/hunters/jobs.vue",
       "src/pages/hunters/login.vue",
-      "src/pages/hunters/shorts.vue",
-      "src/pages/docs/[id]/index.vue"
+      "src/pages/hunters/shorts.vue"
     ],
     "css": [
-      "assets/app.9ddd2abd.css"
+      "assets/app.3205457b.css"
     ]
   },
   "_vendor.78461187.js": {
     "file": "assets/vendor.78461187.js"
   },
   "src/layouts/404.vue": {
-    "file": "assets/404.abbf5c42.js",
+    "file": "assets/404.ce8d85f7.js",
     "src": "src/layouts/404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -52,18 +51,18 @@
     ]
   },
   "src/layouts/admins.vue": {
-    "file": "assets/admins.ebf1d738.js",
+    "file": "assets/admins.cc0a8969.js",
     "src": "src/layouts/admins.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
       "_DarkToggle.57cdeefd.js"
     ]
   },
-  "_fireAPI.4f4b760e.js": {
-    "file": "assets/fireAPI.4f4b760e.js",
+  "_fireAPI.7aa1e5b8.js": {
+    "file": "assets/fireAPI.7aa1e5b8.js",
     "imports": [
       "index.html",
       "_vendor.78461187.js"
@@ -76,7 +75,7 @@
     ]
   },
   "src/layouts/docs_profile.vue": {
-    "file": "assets/docs_profile.1b1a601f.js",
+    "file": "assets/docs_profile.560ff05b.js",
     "src": "src/layouts/docs_profile.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -85,7 +84,7 @@
     ]
   },
   "src/layouts/empty.vue": {
-    "file": "assets/empty.1b8ba63b.js",
+    "file": "assets/empty.0cf4bfdd.js",
     "src": "src/layouts/empty.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -94,7 +93,7 @@
     ]
   },
   "src/layouts/hunters.vue": {
-    "file": "assets/hunters.ddea3758.js",
+    "file": "assets/hunters.bbe616be.js",
     "src": "src/layouts/hunters.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -104,13 +103,13 @@
     ]
   },
   "src/layouts/logged_in_clinics.vue": {
-    "file": "assets/logged_in_clinics.bd8fe410.js",
+    "file": "assets/logged_in_clinics.9006ae69.js",
     "src": "src/layouts/logged_in_clinics.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "_serpent.f850a72b.js"
     ]
   },
@@ -118,40 +117,40 @@
     "file": "assets/serpent.f850a72b.js"
   },
   "src/layouts/logged_in_docs.vue": {
-    "file": "assets/logged_in_docs.d515dec7.js",
+    "file": "assets/logged_in_docs.322f96dd.js",
     "src": "src/layouts/logged_in_docs.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "_addDeduped.8c328dee.js",
-      "_LoadingSpinner.61d07e37.js",
+      "_LoadingSpinner.985faa17.js",
       "_serpent.f850a72b.js"
     ]
   },
   "_addDeduped.8c328dee.js": {
     "file": "assets/addDeduped.8c328dee.js"
   },
-  "_LoadingSpinner.61d07e37.js": {
-    "file": "assets/LoadingSpinner.61d07e37.js",
+  "_LoadingSpinner.985faa17.js": {
+    "file": "assets/LoadingSpinner.985faa17.js",
     "imports": [
       "index.html",
       "_vendor.78461187.js"
     ]
   },
   "src/pages/auth.vue": {
-    "file": "assets/auth.d710fcf4.js",
+    "file": "assets/auth.5208eb55.js",
     "src": "src/pages/auth.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html"
     ]
   },
   "src/pages/faqs.vue": {
-    "file": "assets/faqs.67337abd.js",
+    "file": "assets/faqs.c05157c7.js",
     "src": "src/pages/faqs.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -160,68 +159,68 @@
     ]
   },
   "src/pages/admins/clinics.vue": {
-    "file": "assets/clinics.0bcfd111.js",
+    "file": "assets/clinics.af7881a8.js",
     "src": "src/pages/admins/clinics.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
-      "_ClinicsSlideOver.cb1e488d.js",
-      "_ButtonInput.bfc20fff.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_ClinicsSlideOver.9f02c829.js",
+      "_ButtonInput.2d0dab8a.js",
+      "_LoadingSpinner.985faa17.js"
     ]
   },
-  "_ClinicsSlideOver.cb1e488d.js": {
-    "file": "assets/ClinicsSlideOver.cb1e488d.js",
+  "_ClinicsSlideOver.9f02c829.js": {
+    "file": "assets/ClinicsSlideOver.9f02c829.js",
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js",
-      "_ButtonInput.bfc20fff.js"
+      "_fireAPI.7aa1e5b8.js",
+      "_ButtonInput.2d0dab8a.js"
     ]
   },
-  "_ButtonInput.bfc20fff.js": {
-    "file": "assets/ButtonInput.bfc20fff.js",
+  "_ButtonInput.2d0dab8a.js": {
+    "file": "assets/ButtonInput.2d0dab8a.js",
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_LoadingSpinner.61d07e37.js"
+      "_LoadingSpinner.985faa17.js"
     ]
   },
   "src/pages/admins/docs.vue": {
-    "file": "assets/docs.b68b8dd0.js",
+    "file": "assets/docs.bee7a7f1.js",
     "src": "src/pages/admins/docs.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
-      "_DocsSlideOver.c0ea0f76.js",
-      "_ShortsFilters.489b434d.js",
-      "_ButtonInput.bfc20fff.js",
+      "_DocsSlideOver.fe0a282f.js",
+      "_ShortsFilters.21a5ea53.js",
+      "_ButtonInput.2d0dab8a.js",
       "_addDeduped.8c328dee.js",
       "_TDatepicker.53bafdb1.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_LoadingSpinner.985faa17.js"
     ]
   },
-  "_DocsSlideOver.c0ea0f76.js": {
-    "file": "assets/DocsSlideOver.c0ea0f76.js",
+  "_DocsSlideOver.fe0a282f.js": {
+    "file": "assets/DocsSlideOver.fe0a282f.js",
     "imports": [
       "_vendor.78461187.js",
       "index.html",
       "_addDeduped.8c328dee.js",
       "_TDatepicker.53bafdb1.js",
-      "_ButtonInput.bfc20fff.js",
-      "_fireAPI.4f4b760e.js"
+      "_ButtonInput.2d0dab8a.js",
+      "_fireAPI.7aa1e5b8.js"
     ]
   },
-  "_ShortsFilters.489b434d.js": {
-    "file": "assets/ShortsFilters.489b434d.js",
+  "_ShortsFilters.21a5ea53.js": {
+    "file": "assets/ShortsFilters.21a5ea53.js",
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_LoadingSpinner.61d07e37.js"
+      "_LoadingSpinner.985faa17.js"
     ]
   },
   "_TDatepicker.53bafdb1.js": {
@@ -234,48 +233,48 @@
     ]
   },
   "src/pages/admins/hunters.vue": {
-    "file": "assets/hunters.80e2033d.js",
+    "file": "assets/hunters.cf1f37a2.js",
     "src": "src/pages/admins/hunters.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html"
     ]
   },
   "src/pages/admins/jobs.vue": {
-    "file": "assets/jobs.439960a9.js",
+    "file": "assets/jobs.43c10d75.js",
     "src": "src/pages/admins/jobs.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
-      "_JobsSlideOver.3a80c307.js",
-      "_ButtonInput.bfc20fff.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_JobsSlideOver.234e471e.js",
+      "_ButtonInput.2d0dab8a.js",
+      "_LoadingSpinner.985faa17.js"
     ]
   },
-  "_JobsSlideOver.3a80c307.js": {
-    "file": "assets/JobsSlideOver.3a80c307.js",
+  "_JobsSlideOver.234e471e.js": {
+    "file": "assets/JobsSlideOver.234e471e.js",
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js"
+      "_fireAPI.7aa1e5b8.js"
     ]
   },
   "src/pages/admins/login.vue": {
-    "file": "assets/login.3697fd8f.js",
+    "file": "assets/login.6a86d26c.js",
     "src": "src/pages/admins/login.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js"
+      "_fireAPI.7aa1e5b8.js"
     ]
   },
   "src/pages/admins/searches.vue": {
-    "file": "assets/searches.3a34dd35.js",
+    "file": "assets/searches.2d92f0c8.js",
     "src": "src/pages/admins/searches.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -285,36 +284,36 @@
     ]
   },
   "src/pages/admins/shorts.vue": {
-    "file": "assets/shorts.fcf3d111.js",
+    "file": "assets/shorts.d83c1ceb.js",
     "src": "src/pages/admins/shorts.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
-      "_ShortsSlideOver.ac9470a9.js",
-      "_ButtonInput.bfc20fff.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_ShortsSlideOver.11694f74.js",
+      "_ButtonInput.2d0dab8a.js",
+      "_LoadingSpinner.985faa17.js"
     ]
   },
-  "_ShortsSlideOver.ac9470a9.js": {
-    "file": "assets/ShortsSlideOver.ac9470a9.js",
+  "_ShortsSlideOver.11694f74.js": {
+    "file": "assets/ShortsSlideOver.11694f74.js",
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js"
+      "_fireAPI.7aa1e5b8.js"
     ]
   },
   "src/pages/clinics/docs.vue": {
-    "file": "assets/docs.e745ff5e.js",
+    "file": "assets/docs.99097ccc.js",
     "src": "src/pages/clinics/docs.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "_Badge.64e2efb0.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_LoadingSpinner.985faa17.js"
     ]
   },
   "_Badge.64e2efb0.js": {
@@ -324,123 +323,114 @@
     ]
   },
   "src/pages/clinics/request.vue": {
-    "file": "assets/request.e5b6fd62.js",
+    "file": "assets/request.5a193641.js",
     "src": "src/pages/clinics/request.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js"
+      "_fireAPI.7aa1e5b8.js"
     ]
   },
   "src/pages/clinics/shorts.vue": {
-    "file": "assets/shorts.1ea7898f.js",
+    "file": "assets/shorts.305b2019.js",
     "src": "src/pages/clinics/shorts.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "_Badge.64e2efb0.js",
-      "_ShortsFilters.489b434d.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_ShortsFilters.21a5ea53.js",
+      "_LoadingSpinner.985faa17.js"
     ]
   },
   "src/pages/docs/clinics.vue": {
-    "file": "assets/clinics.d02c2fd4.js",
+    "file": "assets/clinics.7e830cb8.js",
     "src": "src/pages/docs/clinics.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
       "_Badge.64e2efb0.js",
-      "_ButtonInput.bfc20fff.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_ButtonInput.2d0dab8a.js",
+      "_LoadingSpinner.985faa17.js"
     ]
   },
   "src/pages/docs/shorts.vue": {
-    "file": "assets/shorts.bab33ff4.js",
+    "file": "assets/shorts.16dc8b99.js",
     "src": "src/pages/docs/shorts.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
       "_TDatepicker.53bafdb1.js",
       "_vendor.78461187.js"
     ]
   },
   "src/pages/hunters/clinics.vue": {
-    "file": "assets/clinics.f40483ad.js",
+    "file": "assets/clinics.405e71bc.js",
     "src": "src/pages/hunters/clinics.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
-      "_ClinicsSlideOver.cb1e488d.js",
-      "_ButtonInput.bfc20fff.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_ClinicsSlideOver.9f02c829.js",
+      "_ButtonInput.2d0dab8a.js",
+      "_LoadingSpinner.985faa17.js"
     ]
   },
   "src/pages/hunters/docs.vue": {
-    "file": "assets/docs.22d41b5c.js",
+    "file": "assets/docs.0fa7306f.js",
     "src": "src/pages/hunters/docs.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
-      "_DocsSlideOver.c0ea0f76.js",
-      "_ButtonInput.bfc20fff.js",
+      "_DocsSlideOver.fe0a282f.js",
+      "_ButtonInput.2d0dab8a.js",
       "_addDeduped.8c328dee.js",
       "_TDatepicker.53bafdb1.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_LoadingSpinner.985faa17.js"
     ]
   },
   "src/pages/hunters/jobs.vue": {
-    "file": "assets/jobs.b7ca2b9e.js",
+    "file": "assets/jobs.ce9d585a.js",
     "src": "src/pages/hunters/jobs.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
-      "_JobsSlideOver.3a80c307.js",
-      "_ButtonInput.bfc20fff.js",
-      "_LoadingSpinner.61d07e37.js"
+      "_JobsSlideOver.234e471e.js",
+      "_ButtonInput.2d0dab8a.js",
+      "_LoadingSpinner.985faa17.js"
     ]
   },
   "src/pages/hunters/login.vue": {
-    "file": "assets/login.c0381ced.js",
+    "file": "assets/login.805cc482.js",
     "src": "src/pages/hunters/login.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
       "index.html",
-      "_fireAPI.4f4b760e.js"
+      "_fireAPI.7aa1e5b8.js"
     ]
   },
   "src/pages/hunters/shorts.vue": {
-    "file": "assets/shorts.21964c4c.js",
+    "file": "assets/shorts.a2f73d63.js",
     "src": "src/pages/hunters/shorts.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor.78461187.js",
-      "_fireAPI.4f4b760e.js",
+      "_fireAPI.7aa1e5b8.js",
       "index.html",
-      "_ShortsSlideOver.ac9470a9.js",
-      "_ShortsFilters.489b434d.js",
-      "_LoadingSpinner.61d07e37.js"
-    ]
-  },
-  "src/pages/docs/[id]/index.vue": {
-    "file": "assets/index.ee0486df.js",
-    "src": "src/pages/docs/[id]/index.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor.78461187.js",
-      "index.html"
+      "_ShortsSlideOver.11694f74.js",
+      "_ShortsFilters.21a5ea53.js",
+      "_LoadingSpinner.985faa17.js"
     ]
   }
 }
