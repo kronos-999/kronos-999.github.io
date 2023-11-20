@@ -1,0 +1,1 @@
+import{Y as e,o,k as a}from"./vendor.78461187.js";import{c as s}from"./app.eacb9c81.js";const t={class:"flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow"},d={__name:"index",setup:s=>(e(),(e,s)=>(o(),a("li",t)))};"function"==typeof s&&s(d);export{d as default};
